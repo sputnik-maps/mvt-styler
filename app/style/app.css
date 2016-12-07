@@ -1,0 +1,100 @@
+.app-col-left {
+	position: absolute;
+	top:0; left:0; right:50%;bottom:0;
+}
+
+.app-col-right {
+	position: absolute;
+	top:0; left:50%; right:0; bottom:0;
+}
+
+.editor-tabs {
+	height: 42px;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+	background-color: #eeeeee;
+	border-width: 0 0 0 1px;
+}
+
+#checkboxes {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.content-pane {
+	/* overrides .ace_editor */
+	position:absolute !important;
+	margin: 0;
+	bottom: 20px;
+	left:0;
+	right: 0;
+	top: 42px;
+}
+
+.sm-btn-remove {
+	margin-top: -5px;
+}
+
+#icons-panel {
+	box-sizing: border-box;
+	color: rgb(51, 51, 51);
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding-left: 0px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: calc(100% - 50px);
+}
+
+#icons-panel li{
+	float: left;
+	height: 115px;
+	padding: 10px;
+	line-height: 1.4;
+	text-align: center;
+	background-color: #f9f9f9;
+	border: 1px solid #fff;
+	width: 12.5%;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+#icons-panel li.selected {
+	color: #fff;
+	background-color: #563d7c;
+}
+
+#layers-container {
+	height: calc(100% - 50px);
+	overflow-y: scroll;
+}
+
+#statistic {
+	overflow-y: scroll;
+}
+
+.lyr-btn:hover {
+	background-color: #388E3C;
+	cursor: pointer;
+}
+
+#collapseBtn {
+	float: right;
+	margin-right: 10px;
+}
+
+#expandBtn {
+	position: absolute;
+	right: 10px;
+	display: none
+}
