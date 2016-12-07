@@ -1,6 +1,6 @@
 ## Quick Start
 
-
+Make sure you have sqlite3 installed on your system.
 
 ## Build project
 
@@ -18,7 +18,10 @@ For UI-development cycle
 ```bash
 ./dev.sh
 ```
-
+## Uninstalling NPM nodules
+```bash
+./uninstall.sh
+```
 
 ## Building fonts 
 

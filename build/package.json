@@ -4,8 +4,8 @@
   "description": "MVT style editor",
   "main": "index.js",
   "scripts": {
-    "build": "gulp default",
-    "dev": "gulp watch"
+    "build": "./node_modules/.bin/gulp default",
+    "dev":   "./node_modules/.bin/gulp watch"
   },
   "repository": {
     "type": "git",
