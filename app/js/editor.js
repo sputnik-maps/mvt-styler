@@ -25,7 +25,7 @@ var commitId;
 var projectLoaded = false;
 var styleChanged = false;
 var editorVisible = true;
-var zoomCorrection = document.getElementById('zoom-correction-checkbox').checked;
+var zoomCorrection = false;
 map.showTileBoundaries = document.getElementById('boundaries-checkbox').checked;
 var layersAtPointPopup;
 
@@ -670,11 +670,6 @@ $('#expandBtn').click(function () {
 
 document.getElementById('boundaries-checkbox').onclick = function() {
     map.showTileBoundaries = !!this.checked;
-};
-
-document.getElementById('zoom-correction-checkbox').onclick = function() {
-    zoomCorrection = !!this.checked;
-    applyStyle(style, true);
 };
 
 $('.editor-tabs li').on('click', onTabClick);
