@@ -28,18 +28,18 @@ var storage = {
 
 		// get projects list
 		'getProjects': function _getProjects (cb) {
-			xhr.get('projects', null, cb || defaultCallback)
+			xhr.get(' ./projects', null, cb || defaultCallback)
 		},
 
 		// create project in storage
 		'createProject': function _createProject (name, cb) {
-			xhr.post('projects',
+			xhr.post('./projects',
 				JSON.stringify({name: name}),
 				cb || defaultCallback
 			)
 		},
 		'deleteProject': function _deleteProject(projectId, cb) {
-			xhr.delete('projects/'+ projectId,
+			xhr.delete('./projects/'+ projectId,
 				null,
 				cb || defaultCallback
 			);
@@ -78,7 +78,7 @@ var storage = {
 				throw 'invalid project ID';
 			}
 			projectId = id;
-			var path = 'projects/' + projectId;
+			var path = './projects/' + projectId;
 			if (commit && commit != -1) {
 				projectCommit = commit;
 				path += '/commit/' + commit;
