@@ -404,6 +404,7 @@ function editLayer(lyr_name) {
 		var lyr = layers[i];
 		if (lyr.id === lyr_name) {
 			tabName = 'layer';
+			layerIndex = i;
 			edit(lyr, lyr.id);
 			return;
 		}
